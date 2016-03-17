@@ -1,7 +1,9 @@
 @import "fonts.css";
 a{
     outline:none !important;
+    text-decoration: none !important;
 }
+ul{padding: 0;margin: 0;list-style: none;}
 .padding-0{
     padding: 0;
 }
@@ -349,7 +351,7 @@ a{
     margin-bottom: 20px;
     padding:0 15px;
 }
-.catalog-category-view .product-list .item{margin-bottom: 67px;color:#3f434a;}
+.catalog-category-view .product-list .item{margin-bottom: 20px;color:#3f434a;}
 .catalog-category-view .product-list .item .image img{width: 100%;}
 .catalog-category-view .banner-catalog{margin-bottom: 40px;padding:0 15px;}
 .catalog-category-view .product-list .item .info{padding-top: 25px;padding-left:20px;padding-bottom:10px;background: #efefef}
@@ -370,6 +372,27 @@ a{
     font-size:14px;
     text-decoration: line-through;
 }
+.catalog-category-view .filter-box .filter-point{margin-bottom: 10px;}
+.catalog-category-view .filter-box .filter-point h1.title a{
+    background: #3f434a;
+    display: block;
+    color:#FFFFFF;
+    font-size: 16px;
+    font-family: Avenir;
+    padding: 10px;
+    text-decoration: none;
+}
+.catalog-category-view .filter-box .filter-point h1.title{margin:0;}
+.catalog-category-view .filter-box .filter-point h1.title a:hover{text-decoration: none;}
+.catalog-category-view .filter-box .filter-point ul.child-1 li a{
+    background: #d6d6d6;
+    display: block;
+    padding: 10px 10px 10px 20px;
+    color:#000000;
+}
+.catalog-category-view .filter-box .filter-point ul.child-1.no-child li a{background: #EFEFEF;}
+.catalog-category-view .filter-box .filter-point ul.child-1 li a:hover{text-decoration: none;}
+.catalog-category-view .filter-box .filter-point ul.child-2 li a{background: #efefef;padding: 10px 10px 10px 30px;}
 /*catalog*/
 
 /*footer*/

@@ -34,4 +34,20 @@ jQuery(function($){
         $(".overlayer-shop").hide();
     });
     /*/box event hover*/
+
+    /*product-filter-panel*/
+    $(".filter-point h1").click(function(){
+        var chilFilterLvl1 = $(this).attr('def');
+        if($("#"+chilFilterLvl1).is(":visible")){
+            $("#"+chilFilterLvl1).slideUp();
+            $(this).find("i").addClass('glyphicon-plus');
+            $(this).find("i").removeClass('glyphicon-minus');
+        }else{
+            $("#"+chilFilterLvl1).slideDown();
+            $(this).find("i").removeClass('glyphicon-plus');
+            $(this).find("i").addClass('glyphicon-minus');
+        }
+    });
+    /*product-filter-panel*/
+
 });
