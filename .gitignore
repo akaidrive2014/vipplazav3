@@ -8,3 +8,6 @@ vendor/*
 tests/*
 .idea/*
 !.gitignore
+.buildpath
+.project
+.settings/*
