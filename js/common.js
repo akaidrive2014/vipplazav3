@@ -35,6 +35,7 @@ jQuery(function($){
     });
     /*/box event hover*/
 
+
     /*product-filter-panel*/
     $(".filter-point h1").click(function(){
         var chilFilterLvl1 = $(this).attr('def');
@@ -49,5 +50,18 @@ jQuery(function($){
         }
     });
     /*product-filter-panel*/
+
+    /* dropdown hover menu */
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+    /* /dropdown hover menu */
 
 });
