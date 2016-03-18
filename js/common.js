@@ -35,7 +35,6 @@ jQuery(function($){
     });
     /*/box event hover*/
 
-
     /*product-filter-panel*/
     $(".filter-point h1").click(function(){
         var chilFilterLvl1 = $(this).attr('def');
@@ -51,15 +50,41 @@ jQuery(function($){
     });
     /*product-filter-panel*/
 
+    /*floating filter*/
+    var topPosition = 0;
+    $(window).scroll(function() {
+        console.log(parseInt($('.footer-wrapper').offset().top - $(window).scrollTop()));
+
+        if($(window).scrollTop() + $('.filter-box').offset() == $('.footer-wrapper').offset()) {
+            //console.log('baratum');
+        }
+        /*if(($('.footer-wrapper').offset().top - $(window).scrollTop())>599){
+            $(".filter-box").removeClass('fixestatic');
+            $(".filter-box").addClass('fixed');
+        }*/
+        /*if(($('.footer-wrapper').offset().top - $(window).scrollTop())<573){
+            $(".filter-box").removeClass('fixed');
+            $(".filter-box").addClass('fixestatic');
+        }*/
+        if($(window).scrollTop() > 181) {
+            //console.log($(window).scrollTop());
+            $(".filter-box").addClass('fixed');
+        }else{
+            $(".filter-box").removeClass('fixed');
+        }
+
+    });
+    /*/floating filter*/
+
     /* dropdown hover menu */
-    $(".dropdown").hover(            
+    $(".dropdown").hover(
         function() {
             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-            $(this).toggleClass('open');        
+            $(this).toggleClass('open');
         },
         function() {
             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-            $(this).toggleClass('open');       
+            $(this).toggleClass('open');
         }
     );
     /* /dropdown hover menu */
