@@ -53,7 +53,8 @@ jQuery(function($){
     /*floating filter*/
     var topPosition = 0;
     $(window).scroll(function() {
-        console.log(parseInt($('.footer-wrapper').offset().top - $(window).scrollTop()));
+        console.log($(window).scrollTop());
+        //console.log(parseInt($('.footer-wrapper').offset().top - $(window).scrollTop()));
 
         if($(window).scrollTop() + $('.filter-box').offset() == $('.footer-wrapper').offset()) {
             //console.log('baratum');
@@ -66,11 +67,18 @@ jQuery(function($){
             $(".filter-box").removeClass('fixed');
             $(".filter-box").addClass('fixestatic');
         }*/
-        if($(window).scrollTop() > 181) {
+        if($(window).scrollTop() >= 1103){
+            console.log('xxxxxxxxxxx');
+            $(".filter-box").removeClass('fixed');
+            $(".filter-box").addClass('fixestatic');
+        }else if($(window).scrollTop() >= 181) {
+            console.log('tttesssssst');
             //console.log($(window).scrollTop());
             $(".filter-box").addClass('fixed');
-        }else{
+            $(".filter-box").removeClass('fixestatic');
+        }else if($(window).scrollTop()<=181){
             $(".filter-box").removeClass('fixed');
+            $(".filter-box").removeClass('fixestatic');
         }
 
     });
@@ -86,5 +94,7 @@ jQuery(function($){
         }
     );
     /* /dropdown hover menu */
+
+
 
 });
