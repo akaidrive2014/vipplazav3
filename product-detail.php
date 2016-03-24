@@ -250,20 +250,6 @@
             <div class="col-md-12">
                 <div class="brand-name">NIKE</div>
             </div>
-            <div class="col-md-4">
-                <div class="product-image product-image-zoom">
-                    <div class="product-image-gallery" style="position:relative;">
-                        <a class="fancybox-pdp" rel="group"
-                           href="#">
-                            <img id="image-55"
-                                 class="gallery-image visible"
-                                 src="images/1big.jpg"
-                                 alt="no image"
-                                 title="no image"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-1">
                 <div class="more-views">
                     <ul class="product-image-thumbs">
@@ -310,13 +296,38 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
+                <div class="product-image product-image-zoom">
+                    <div class="product-image-gallery" style="position:relative;">
+                        <a class="fancybox-pdp" rel="group"
+                           href="#">
+                            <img id="image-55"
+                                 class="gallery-image visible"
+                                 src="images/1big.jpg"
+                                 alt="no image"
+                                 title="no image"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
                 <div class="product-info">
                     <div class="product-name">Product Name</div>
                     <div class="product-price">
-                        <div class="old-price">Rp. 300.000</div>
-                        <div class="current-price">Rp. 170.000</div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="current-price">Rp. 170.000</div>
+                                <div class="old-price">Rp. 300.000</div>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="disc-value">60%</span>
+                            </div>
+                        </div>
+
                     </div>
+                    <div class="sku">SKU 123456789HT</div>
+                    <div class="ssku">SSKU 123456789-HT-BLACK</div>
                     <div class="description">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                             tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -324,127 +335,169 @@
                         <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
                             ut aliquip ex ea commodo consequat. </p>
                     </div>
-                    <div class="share-section">
+                   <!-- <div class="share-section">
                         <div class="title">SHARE :</div>
                         <div class="btn-group" style="">
                             <div class="facebook btn"><i class="fa fa-facebook-official"></i></div>
                             <div class="twitter btn"><i class="fa fa-twitter"></i></div>
                             <div class="instagram btn"><i class="fa fa-instagram"></i></div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="available-info">STOK TERSEDIA</div>
-                <div class="sku">SKU 123456789HT</div>
-                <div class="ssku">SSKU 123456789-HT-BLACK</div>
                 <div class="box-form">
                     <form action="" method="post">
-                        <div class="row size">
-                            <div class="col-xs-3">UKURAN</div>
-                            <div class="col-xs-6">
-                                <select name="">
-                                    <option value="1">XL</option>
-                                    <option value="2">M</option>
-                                </select>
+                        <div class="row">
+                            <div class="size">
+                                <div class="col-xs-12">
+                                    <p>PILIH UKURAN</p>
+                                    <div class="size-selection">
+                                        <ul>
+                                            <li><a href="#">S</a></li>
+                                            <li><a href="#">M</a></li>
+                                            <li><a href="#">L</a></li>
+                                            <li><a href="#">XL</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row color">
-                            <div class="col-xs-3">WARNA</div>
-                            <div class="col-xs-6">
-                                <select name="">
-                                    <option value="1">MERAH</option>
-                                    <option value="2">KUNING</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row quantity">
-                            <div class="col-xs-3">JUMLAH</div>
-                            <div class="col-xs-6">
-                                <select name="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                                <span class="info">*Maksimal 2 per pemesanan</span>
+                        <div class="row">
+                            <div class="quantity">
+                                <div class="col-xs-12">
+                                    <p>JUMLAH BARANG</p>
+                                    <div class="qty-select">
+                                        <select class="form-control fc-qty" name="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="info">*Maksimal 2 per pemesanan</div>
+                                </div>
+
                             </div>
                         </div>
                     </form>
-                    <div class="disclaimer">
+                  <!--  <div class="disclaimer">
                         Warna produk mungkin terlihat sedikit berbeda dari yang tampak pada layar,
                         tergantung pada pengaturan layar
+                    </div> -->
+                </div>
+                <div class="add-to-link">
+                    <div class="col-md-8"><a href="">ADD TO WISHLIST</a></div>
+                    <div class="col-md-4">
+                        <a id="txt-share" class="share-title" data-trigger="hover" data-conainer="body" data-toggle="popover" data-placement="top">SHARE</a>
+                        <div id="share-content" class="hidden">
+                            <div class="btn-group">
+                                <ul>
+                                    <li class="facebook btn"><i class="fa fa-facebook-official"></i></li>
+                                    <li class="twitter btn"><i class="fa fa-twitter"></i></li>
+                                    <li class="instagram btn"><i class="fa fa-instagram"></i></li>
+                                </ul>
+                                <!--<div class="facebook btn"><i class="fa fa-facebook-official"></i></div>
+                                <div class="twitter btn"><i class="fa fa-twitter"></i></div>
+                                <div class="instagram btn"><i class="fa fa-instagram"></i></div>
+                                <div class="instagram btn"><i class="fa fa-instagram"></i></div>-->
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="btn-shop">
                     <input type="button" class="add-to-cart btn btn-yellow" value="TAMBAH KE KERANJANG">
-                    <input type="button" class="add-to-wishlist btn btn-gray" value="TAMBAH KE WISHLIST">
+                   <!-- <input type="button" class="add-to-wishlist btn btn-gray" value="TAMBAH KE WISHLIST"> -->
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="tab-container">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#detail" aria-controls="home" role="tab" data-toggle="tab">RINCIAN</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#payment" aria-controls="profile" role="tab" data-toggle="tab">PEMBAYARAN DAN
-                            PENGIRIMAN</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#brand" aria-controls="messages" role="tab" data-toggle="tab">BRAND</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#size" aria-controls="settings" role="tab" data-toggle="tab">STANDAR UKURAN</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#care" aria-controls="settings" role="tab" data-toggle="tab">CARA PERAWATAN</a>
-                    </li>
-                </ul>
+            <div class="content-discript">
+                <div class="col-md-9">
+                    <div class="tab-container">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#discription" aria-controls="discription" role="tab" data-toggle="tab">DISCRIPTION</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#detail" aria-controls="home" role="tab" data-toggle="tab">RINCIAN</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#payment" aria-controls="profile" role="tab" data-toggle="tab">PEMBAYARAN DAN
+                                    PENGIRIMAN</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#brand" aria-controls="messages" role="tab" data-toggle="tab">BRAND</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#size" aria-controls="settings" role="tab" data-toggle="tab">STANDAR UKURAN</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#care" aria-controls="settings" role="tab" data-toggle="tab">CARA PERAWATAN</a>
+                            </li>
+                        </ul>
 
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="detail">
-                        <p>z Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="discription">
+                                <p>z Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat. </p>
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                    ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="detail">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                    ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="payment">
+                                <p>q Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                    ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="brand">
+                                <p>v Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                                <p>b Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                    ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="size">
+                                <p>j Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                    ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="care">
+                                <p>k Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                    ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="payment">
-                        <p>q Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
 
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="brand">
-                        <p>v Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-                        <p>b Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="size">
-                        <p>j Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="care">
-                        <p>k Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat. </p>
+                <div class="col-md-3">
+                    <div class="item">
+                        <h5 class="text-center">REKOMENDASI KAMI</h5>
+                        <div class="image">
+                            <img src="images/1.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="suggest">
-                <h3>ANDA MUNGKIN SUKA PRODUK INI</h3>
+                <h3>PRODUK TERAKHIR DI LIHAT</h3>
                 <div class="col-md-3">
                     <div class="item">
                         <div class="image">

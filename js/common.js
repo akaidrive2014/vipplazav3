@@ -95,6 +95,16 @@ jQuery(function($){
     );
     /* /dropdown hover menu */
 
+    /* click share */
+    $('#txt-share').popover({
+        html : true,
+        container : '#txt-share',
+        trigger: 'hover',
+        content : function(){
+            return $('#share-content').html();
+        },
+        template : '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
 
+    });
 
 });
